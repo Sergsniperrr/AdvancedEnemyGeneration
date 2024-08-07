@@ -32,15 +32,14 @@ public class Enemy : MonoBehaviour
     private void CountDown()
     {
         _currentLifeTime--;
+
         if (_currentLifeTime <= 0)
             Destroy(gameObject);
     }
 
     private IEnumerator LifeCounter()
     {
-        bool isLiving = true;
-
-        while (isLiving)
+        while (enabled)
         {
             CountDown();
 

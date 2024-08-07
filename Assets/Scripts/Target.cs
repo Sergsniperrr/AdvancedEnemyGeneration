@@ -8,7 +8,7 @@ public class Target : MonoBehaviour
 
     private int _currentPoint = 0;
 
-    void Update()
+    private void Update()
     {
         if (transform.position == _waypoints[_currentPoint].position)
         {

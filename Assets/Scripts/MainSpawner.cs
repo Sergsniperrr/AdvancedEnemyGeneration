@@ -28,9 +28,7 @@ public class MainSpawner : MonoBehaviour
 
     private IEnumerator Spawn()
     {
-        bool isMoving = true;
-
-        while (isMoving)
+        while (enabled)
         {
             SpawnOnRandomSpawner();
 
